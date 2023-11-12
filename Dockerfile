@@ -5,7 +5,8 @@ FROM caddy:${CADDY_VERSION}-builder-alpine AS builder
 
 RUN xcaddy build \
     --with github.com/caddy-dns/porkbun \
-    --with github.com/caddyserver/cache-handler
+    --with github.com/caddyserver/cache-handler \
+    --with github.com/lucaslorentz/caddy-docker-proxy/v2
 
 # Container
 FROM caddy:${CADDY_VERSION}-alpine
