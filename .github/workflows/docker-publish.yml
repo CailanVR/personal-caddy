@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 env:
-  BASE_NAME: CailanVR/personal-caddy
+  BASE_NAME: cailanvr/personal-caddy
 
 jobs:
   buildx:
